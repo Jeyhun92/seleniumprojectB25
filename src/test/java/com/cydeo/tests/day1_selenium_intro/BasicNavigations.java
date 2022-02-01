@@ -20,12 +20,32 @@ public class BasicNavigations {
         //Stop code execution for 3 seconds
         Thread.sleep(3000);
 
+
         // use selenium to navigate back
         driver.navigate().back();
 
-        //break until 2.08 pm cst
-        //break until 3.08 pm est
+        //Stop code execution for 3 seconds
+        Thread.sleep(3000);
 
+        // use selenium to navigate forward
+        driver.navigate().forward();
+
+        //Stop code execution for 3 seconds
+        Thread.sleep(3000);
+
+        // use selenium to navigate refresh
+        driver.navigate().refresh();
+
+        //Stop code execution for 3 seconds
+        Thread.sleep(3000);
+
+        // use navigate().to():
+        driver.navigate().to("https://www.google.com");
+
+        //get the title of the page
+        //System.out.println("driver.getTitle() = " + driver.getTitle());
+
+        String currentTitle = driver.getTitle();
     }
 
 
